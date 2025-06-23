@@ -25,7 +25,7 @@ const Read = () => {
   };
 
   const getData = async () => {
-    const response = await fetch("http://localhost:5000/");
+    const response = await fetch("https://crudify-v7hs.onrender.com/");
     const result = await response.json();
     if (!response.ok) {
       setError(result.error);
