@@ -29,7 +29,7 @@ const Update = () => {
     e.preventDefault();
     const updatedUser = { name, email, age };
 
-    const response = await fetch(`http://localhost:5000/edit/${id}`, {
+    const response = await fetch(`https://crudify-v7hs.onrender.com/edit/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
