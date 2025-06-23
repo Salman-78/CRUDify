@@ -1,0 +1,17 @@
+# node
+node_modules/
+
+# env
+.env
+
+# build
+build/
+dist/
+
+# uploads
+upload/
+
+# editor files
+.vscode/
+.DS_Store
+*.log

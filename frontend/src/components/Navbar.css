@@ -1,0 +1,65 @@
+/* Stylish Navbar */
+.custom-navbar {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a40);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo .brand {
+  font-size: 24px;
+  /* color: rgb(120, 250, 120); */
+  color: rgb(253, 253, 122);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-logo .brand:hover {
+  color: #fff;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+.nav-link {
+  color: #ccc;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(161, 253, 161);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: rgb(161, 253, 161);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: rgb(161, 253, 161);
+  font-weight: bold;
+}
